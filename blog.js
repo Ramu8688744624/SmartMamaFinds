@@ -34,7 +34,7 @@ function renderBlogs() {
 
     blogsContainer.innerHTML = blogsToDisplay.map(blog => `
         <div class="bg-white p-6 rounded-lg shadow-lg">
-            <img class="w-full h-48 object-cover rounded-t-lg" src="${blog.ImageURL}" alt="${blog.Header}">
+            <img class="w-full h-48 object-cover rounded-t-lg" src="${blog.ImageURL}" alt="${blog.Header}" loading="lazy">
             <h2 class="text-xl font-bold my-4">${blog.Header}</h2>
             <p class="text-gray-700 mb-4">${blog.Description}</p>
             <a href="${blog.AffiliateLink}" class="text-orange-600 hover:text-orange-800" target="_blank">Check it out</a>

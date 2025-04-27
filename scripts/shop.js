@@ -13,7 +13,7 @@ fetch("https://sheetdb.io/api/v1/0pqlg9a6nffi9")
 
       const productHTML = `
         <div class="bg-white shadow-md rounded-lg overflow-hidden hover:shadow-xl transition duration-300">
-          <img src="${item.Image_URL}" alt="${item.Product_Name}" class="w-full h-52 object-contain">
+          <img src="${item.Image_URL}" alt="${item.Product_Name}" loading="lazy" class="w-full h-52 object-contain">
           <div class="p-4 space-y-3">
             <h3 class="text-lg font-semibold text-gray-800">${item.Product_Name}</h3>
 
